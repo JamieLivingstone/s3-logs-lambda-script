@@ -10,7 +10,7 @@ exports.handler = function (event, context) {
     var fileKey = event.Records[0].s3.object.key;
 
     var params = {
-        Bucket: 'bucketnamehere',
+        Bucket: 'bucketname',
         Key: 'logs/' + fileKey
     };
 
